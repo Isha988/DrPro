@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --dark: #3a347a;
+  --blue: #39cabb;
+  --light: #ebf7f6;
+  --extraDark: #00224f;
+  --footerTop:#1a2332;
+  --footerBottom: #272f3e;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Jost', sans-serif;
+}
+p{
+  font-family: 'Poppins', sans-serif;
+}
+
+/* basic styling */
+.para{
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5rem;
+}
+.heading{
+  color: var(--extraDark);
+  font-weight: 900;
+  font-family: 'Jost', sans-serif;
+}
+
+/* section header */
+.sectionHeader{
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.sectionTitle{
+  text-transform: uppercase;
+  color: var(--blue);
+  font-size: 1.1rem;
+  font-weight: 500;
+
+}
+.sectionSubtitle{
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin: 1rem 0;
+}
+.sectionInner{
+  padding: 3.5rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* footer */
+.footer{
+  background-color: var(--footerTop);
+  color: white;
+  text-align: center;
+  
+}
+.footerbottom{
+  padding: 2rem 1rem;
+  background-color: var(--footerBottom);
+}
+.footertop{
+  padding: 5rem 1rem;
+}
+.footerbottom .para{
+  text-transform: capitalize;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.footer .logo .heading{
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 0.5rem;
+}
+/* button  */
+.btn{
+  background-color: var(--blue);
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  text-transform: capitalize;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  width:max-content;
+  display: inline-block;  
+  transition: all 0.4s linear;  
+}
+.btn:hover{
+  background-color: var(--dark);
+ 
+}
+/* Nav bar */
+.nav .sectionInner{
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.nav{
+  padding: 1.3rem 1rem;
+  z-index: 1000;
+}
+.sticky{
+  position: sticky;
+  top: 0;
+}
+.nav .link{
+  font-family: 'Jost', sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-right: 1.5rem;
+  position: relative;
+}
+.nav .link.active, .nav .link:hover{
+  color: var(--blue);
+}
+.nav .link.active::after, .nav .link:hover::after{
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2.5px;
+  background-color: var(--blue);
+}
+/* search form */
+.searchForm{
+  width: 100%;
+  max-width: 770px;
+  padding: 0.5rem;
+  background-color: white; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 22rem;
+  margin: 1rem 0;
+  position: relative;
+}
+.searchForm button{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--blue);
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  cursor :pointer;
+  transition: all 0.4s linear;
+}
+.searchForm button:hover{
+  background-color: var(--dark);
+
+}
+
+.searchForm input{
+  border: none;
+  outline: none;
+  padding: 0 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: 'Poppins', sans-serif;
+  width:80%;
+  
+}
+
+@media screen and (min-width: 440px){
+ .sectionSubtitle{
+   font-size: 2.4rem;
+   line-height: 3rem;
+ }
+ .nav .sectionInner{
+    flex-direction: row;
+    justify-content: space-between;
+ }
+}
+@media screen and (min-width: 770px){
+  .sectionSubtitle{
+    font-size: 3rem;
+    margin: 1.5rem 0;
+  }
+  .sectionInner{
+    padding: 5rem 1rem;
+  }
+}

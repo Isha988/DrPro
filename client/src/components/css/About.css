@@ -1,0 +1,36 @@
+.about{
+    padding: 2rem 0;
+}
+.about .sectionHeader{
+    text-align: left;
+}
+.about .para{
+    color: rgba(0, 0, 0, 0.4);
+}
+.aboutImage img{
+    width: 100%;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+    filter: drop-shadow(2px 2px 5px var(--dark)) drop-shadow(-20px -20px 50px var(--light))
+    
+}
+.aboutImage{
+    margin-top: 5rem;
+}
+@media screen and (min-width: 770px){
+    .aboutImage{
+        margin-top: 8rem;
+    }
+}
+@media screen and (min-width: 1000px){
+    .aboutImage{
+        margin-top: 0;
+    }
+    .about .sectionInner{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;  
+      justify-content: space-between;
+    }
+}

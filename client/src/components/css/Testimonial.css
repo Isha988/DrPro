@@ -1,0 +1,55 @@
+.testimonialSection{
+    background-color: var(--light);
+    background-image: url("D:\ishaCoding\drPro\client\src\assets\testimonialbg.png");
+    background-size: cover;
+    background-position: center;
+    padding: 1.5rem;
+}
+.testimonial{
+    background-color: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    box-shadow: 2px 2px 10px rgba(58, 52, 122,0.2);
+}
+.testimonial .views{
+    font-size: 1.05rem;
+}
+.testimonial .views::after, .testimonial .views::before{
+    content: '"';
+    font-size: 1.4rem;
+}
+.testimonial .heading{
+    text-transform: capitalize;
+    font-weight: 800;
+}
+.person{
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    
+}
+.person img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+}
+.person .para{
+    text-transform: capitalize;
+    opacity: 0.6;
+}
+.mySwiper{
+   padding: 0 1rem !important;   
+}
+.swiper-pagination{
+    position: relative !important;
+    bottom: 0 !important;
+    margin-top: 3rem;
+}
+.swiper-pagination-bullet{
+    width: 0.7rem !important;
+    height: 0.7rem !important;
+    background-color: var(--extraDark) !important;
+    margin: 0 1rem !important;
+}
