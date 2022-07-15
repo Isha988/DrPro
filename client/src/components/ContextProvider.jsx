@@ -9,7 +9,7 @@ const initialState = {
         education:"",
         search : ""
     },
-    doctors: [1,2,3],
+    doctors: [],
     loading: true
   };
 
@@ -20,9 +20,6 @@ const reducer = (state, action) =>{
         
         case "fetch" : 
             return {...state, doctors: action.payload, loading:false}
-
-        case "search" : 
-            return {...state, search: {...action.payload}}
         
         default : 
             return state
