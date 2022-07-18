@@ -35,7 +35,7 @@ import { Action, Context } from './ContextProvider';
         sendQuery(search)
     };
 
-    const delayedQuery = useCallback(debounce(updateQuery, 500), [search]);
+    const delayedQuery = useCallback(debounce(updateQuery, 400), [search]);
 
 
     useEffect(() => {
